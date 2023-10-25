@@ -1,0 +1,81 @@
+@import "../../styles/main.less";
+
+.app-footer {
+  color: @primary-text-color;
+  padding: 24px 1.5rem !important;
+
+  .app-footer__logo {
+    .logo__icon {
+      font-size: 3rem;
+    }
+
+    .logo__text {
+      font-size: 1.5rem;
+    }
+  }
+
+  .app-footer__heading {
+    color: @primary-text-color;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .app-footer__subscribe {
+    border-radius: 100px;
+
+    .ant-input-suffix {
+      .ant-btn {
+        color: white;
+        background-color: @primary-color;
+        border: 0;
+      }
+    }
+  }
+
+  .app-footer__social-link {
+    .social-media__btn {
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: transparent;
+    }
+
+    .anticon {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .app-footer {
+    padding: 24px 50px !important;
+
+    .app-footer__logo {
+      .logo__icon {
+        font-size: 3.5rem;
+      }
+
+      .logo__text {
+        font-size: 2rem;
+      }
+    }
+
+    .app-footer__desc {
+      font-size: 1rem;
+    }
+
+    .app-footer__heading {
+      font-size: 2rem;
+    }
+
+    .app-footer__social-link {
+      .social-media__btn {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      .anticon {
+        font-size: 2rem;
+      }
+    }
+  }
+}

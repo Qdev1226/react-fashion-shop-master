@@ -1,0 +1,43 @@
+@import "../../styles/main.less";
+
+.product {
+  .product__review {
+    color: @secondary-text-color;
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  .product__price {
+  }
+
+  .product__description {
+    font-size: 1rem;
+  }
+
+  .product__btn-group {
+    .product__btn {
+      padding: 0.5rem 0;
+      border-top: @secondary-border;
+      border-bottom: @secondary-border;
+      text-align: center;
+      transition: 0.3s all ease-in-out;
+      cursor: pointer;
+
+      &:first-of-type {
+        border-right: @secondary-border;
+      }
+
+      &:hover {
+        background-color: @primary-color;
+
+        .anticon {
+          color: white;
+        }
+      }
+
+      .anticon {
+        transition: 0.3s all ease-in-out;
+      }
+    }
+  }
+}

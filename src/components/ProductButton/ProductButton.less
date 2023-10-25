@@ -1,0 +1,25 @@
+@import "../../styles/main.less";
+
+.product-btn {
+  color: @primary-text-color !important;
+  border: 0 !important;
+  background-color: transparent !important;
+
+  &::after {
+    content: "+";
+    position: absolute;
+    top: 0;
+    right: -0.5em;
+    width: 1em;
+    height: 1em;
+    color: white;
+    background: @primary-color;
+    border-radius: 100%;
+
+    .flex-center();
+  }
+
+  .anticon {
+    font-size: 2rem;
+  }
+}

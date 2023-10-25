@@ -1,0 +1,37 @@
+@import "../../styles/main.less";
+
+.login-page {
+  min-height: 100vh;
+  background-image: url("http://www.lavesh.org/wp-content/uploads/2019/03/black-friday-fashion-friends-1345082.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+
+  .login-page__form-wrapper {
+    min-height: 100vh;
+  }
+
+  .login-page__form {
+    background-color: white;
+    padding: 2rem;
+
+    .form__logo {
+      .flex-center();
+      color: @primary-color;
+    }
+
+    .form__remember {
+      color: @primary-color;
+    }
+
+    .form__btn {
+      float: right;
+    }
+
+    .form__tips {
+      color: @primary-text-color;
+      opacity: 0.8;
+    }
+  }
+}

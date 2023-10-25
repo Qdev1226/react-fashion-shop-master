@@ -1,0 +1,24 @@
+@import "../../styles/main.less";
+
+.blur-background {
+  .flex-center();
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  .blur-background__image {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(5px);
+  }
+
+  .blur-background__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}

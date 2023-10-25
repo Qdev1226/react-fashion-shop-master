@@ -1,0 +1,37 @@
+@import "../../styles/main.less";
+
+.footer-menu {
+  .ant-menu {
+    background-color: transparent;
+
+    .ant-menu-item {
+      color: @primary-text-color !important;
+      padding-left: 0 !important;
+      border-bottom: @secondary-border !important;
+
+      &:last-of-type {
+        border-bottom: 0 !important;
+      }
+
+      &.ant-menu-item-active,
+      &.ant-menu-item-selected {
+        color: @primary-text-color !important;
+        background-color: transparent !important;
+
+        .anticon {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .footer-menu {
+    .ant-menu {
+      .ant-menu-item {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

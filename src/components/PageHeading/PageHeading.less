@@ -1,0 +1,51 @@
+@import "../../styles/main.less";
+
+.page-heading {
+  .page-heading__title {
+    color: @primary-text-color;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .page-heading__breadcrumb {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+
+    span,
+    span a,
+    span:last-child a {
+      color: @primary-text-color;
+    }
+
+    span a,
+    span:last-child a {
+      transition: 0.3s all ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+
+  &--section {
+    padding: 3rem 0;
+    background-color: #4a4a4a;
+
+    .page-heading__title {
+      color: white;
+    }
+
+    .page-heading__breadcrumb {
+      font-weight: normal;
+      font-size: 1rem;
+
+      span,
+      span a,
+      span:last-child a {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}

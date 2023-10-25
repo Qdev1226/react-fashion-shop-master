@@ -1,0 +1,34 @@
+@import "../../styles/main.less";
+
+.product-name {
+  .product-name__name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .product-name__category {
+    color: @secondary-text-color;
+    font-size: 1rem;
+    font-style: italic;
+
+    .product-name__category-link {
+      color: @secondary-text-color;
+
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .product-name {
+    .product-name__name {
+      font-size: 1.9rem;
+    }
+
+    .product-name__category {
+      font-size: 1.1rem;
+    }
+  }
+}

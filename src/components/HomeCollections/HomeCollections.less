@@ -1,0 +1,56 @@
+@import "../../styles/main.less";
+
+.home-collections {
+  width: 100vw;
+  overflow: hidden;
+
+  .home-collections__card {
+    .flex-center();
+    position: relative;
+    min-height: 300px;
+
+    .card__details {
+      .card_image {
+        width: 100%;
+        height: auto;
+      }
+
+      .card_btn {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: @primary-color;
+        &:hover {
+          transform: translate(-25%, -50%);
+        }
+      }
+
+      .card_name {
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .home-collections {
+    min-width: 100vw;
+
+    .home-collections__card {
+      .card__details {
+        .card_image {
+          width: 200px;
+        }
+
+        .card_name {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
